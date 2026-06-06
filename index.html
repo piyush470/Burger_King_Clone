@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img width="" height="80"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFFmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNi4wLWMwMDIgNzkuMTY0NDg4LCAyMDIwLzA3LzEwLTIyOjA2OjUzICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1sbnM6cGhvdG9zaG9wPSJodHRwOi8vbnMuYWRvYmUuY29tL3Bob3Rvc2hvcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjIuMCAoV2luZG93cykiIHhtcDpDcmVhdGVEYXRlPSIyMDIzLTAzLTI3VDExOjExOjI4KzA1OjMwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAyMy0wMy0yN1QxMToxNTozMCswNTozMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAyMy0wMy0yN1QxMToxNTozMCswNTozMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpmZjY4NDUyNi0xZjYxLTY3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"
+                alt="">
+        </div>
+        <div class="deli">
+            <p class="deli txt">DELIVERY</p>
+        </div>
+        <div class="dinebutn">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <p>DINE-INT/TAKEAWAY</p>
+        </div>
+        <div class="bar">|</div>
+        <div class="search">
+            <div class="loc"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15"
+                    fill="currentColor">
+                    <path
+                        d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z">
+                    </path>
+                </svg></div>
+            <div class="nostores">No Stores Nearby</div>
+        </div>
+
+        <div class="nearby nvopt">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="22" height="22" fill="currentColor">
+                <path
+                    d="M21 11.6458V21C21 21.5523 20.5523 22 20 22H4C3.44772 22 3 21.5523 3 21V11.6458C2.37764 10.9407 2 10.0144 2 9V3C2 2.44772 2.44772 2 3 2H21C21.5523 2 22 2.44772 22 3V9C22 10.0144 21.6224 10.9407 21 11.6458ZM19 12.874C18.6804 12.9562 18.3453 13 18 13C16.8053 13 15.7329 12.4762 15 11.6458C14.2671 12.4762 13.1947 13 12 13C10.8053 13 9.73294 12.4762 9 11.6458C8.26706 12.4762 7.19469 13 6 13C5.6547 13 5.31962 12.9562 5 12.874V20H19V12.874ZM14 9C14 8.44772 14.4477 8 15 8C15.5523 8 16 8.44772 16 9C16 10.1046 16.8954 11 18 11C19.1046 11 20 10.1046 20 9V4H4V9C4 10.1046 4.89543 11 6 11C7.10457 11 8 10.1046 8 9C8 8.44772 8.44772 8 9 8C9.55228 8 10 8.44772 10 9C10 10.1046 10.8954 11 12 11C13.1046 11 14 10.1046 14 9Z">
+                </path>
+            </svg>
+            <p>NEARBY STORES</p>
+        </div>
+        <div class="king nvopt">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path
+                    d="M10.0544 2.0941C11.1756 1.13856 12.8248 1.13855 13.9461 2.09411L15.2941 3.24286C15.4542 3.37935 15.6533 3.46182 15.8631 3.47856L17.6286 3.61945C19.0971 3.73663 20.2633 4.9028 20.3805 6.37131L20.5214 8.13679C20.5381 8.34654 20.6205 8.54568 20.757 8.70585L21.9058 10.0539C22.8614 11.1751 22.8614 12.8243 21.9058 13.9456L20.757 15.2935C20.6206 15.4537 20.538 15.6529 20.5213 15.8627L20.3805 17.6281C20.2633 19.0967 19.0971 20.2628 17.6286 20.3799L15.8631 20.5208C15.6533 20.5376 15.4542 20.6201 15.2941 20.7566L13.9461 21.9053C12.8248 22.8609 11.1756 22.8608 10.0543 21.9053L8.70631 20.7566C8.54615 20.6201 8.34705 20.5376 8.1373 20.5209L6.37184 20.3799C4.9033 20.2627 3.73716 19.0966 3.61997 17.6281L3.47906 15.8627C3.46232 15.6529 3.37983 15.4538 3.24336 15.2936L2.0946 13.9455C1.13905 12.8243 1.13904 11.1752 2.09458 10.0539L3.24334 8.70589C3.37983 8.54573 3.46234 8.34654 3.47907 8.13678L3.61996 6.3713C3.73714 4.90278 4.90327 3.73665 6.3718 3.61946L8.13729 3.47857C8.34705 3.46183 8.54619 3.37935 8.70636 3.24286L10.0544 2.0941ZM12.6488 3.61632C12.2751 3.29782 11.7253 3.29781 11.3516 3.61632L10.0036 4.76509C9.5231 5.17456 8.92568 5.42201 8.29637 5.47223L6.5309 5.61312C6.04139 5.65219 5.65268 6.04089 5.61362 6.53041L5.47272 8.29593C5.4225 8.92521 5.17505 9.52259 4.76559 10.0031L3.61683 11.3511C3.29832 11.7248 3.29831 12.2746 3.61683 12.6483L4.76559 13.9963C5.17506 14.4768 5.4225 15.0743 5.47275 15.7035L5.61363 17.469C5.65268 17.9585 6.04139 18.3473 6.53092 18.3863L8.29636 18.5272C8.92563 18.5774 9.5231 18.8249 10.0036 19.2344L11.3516 20.3831C11.7254 20.7016 12.2751 20.7016 12.6488 20.3831L13.9969 19.2343C14.4773 18.8249 15.0747 18.5774 15.704 18.5272L17.4695 18.3863C17.959 18.3472 18.3478 17.9585 18.3868 17.469L18.5277 15.7035C18.5779 15.0742 18.8253 14.4768 19.2349 13.9964L20.3836 12.6483C20.7022 12.2746 20.7021 11.7249 20.3836 11.3511L19.2348 10.0031C18.8253 9.52259 18.5779 8.92519 18.5277 8.2959L18.3868 6.53041C18.3478 6.0409 17.959 5.65219 17.4695 5.61312L15.704 5.47224C15.0748 5.42203 14.4773 5.17455 13.9968 4.76508L12.6488 3.61632ZM14.8284 7.75718L16.2426 9.1714L9.17154 16.2425L7.75733 14.8282L14.8284 7.75718ZM10.2322 10.232C9.64641 10.8178 8.69667 10.8178 8.11088 10.232C7.52509 9.6463 7.52509 8.69652 8.11088 8.11073C8.69667 7.52494 9.64641 7.52494 10.2322 8.11073C10.818 8.69652 10.818 9.6463 10.2322 10.232ZM13.7677 15.8889C14.3535 16.4747 15.3032 16.4747 15.889 15.8889C16.4748 15.3031 16.4748 14.3534 15.889 13.7676C15.3032 13.1818 14.3535 13.1818 13.7677 13.7676C13.1819 14.3534 13.1819 15.3031 13.7677 15.8889Z">
+                </path>
+            </svg>
+            <p>KING DEALS</p>
+        </div>
+        <div class="login nvopt">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path
+                    d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13Z">
+                </path>
+            </svg>
+            <p>LOGIN</p>
+        </div>
+        <div class="cart nvopt">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                <path
+                    d="M9 6C9 4.34315 10.3431 3 12 3C13.6569 3 15 4.34315 15 6H9ZM7 6H4C3.44772 6 3 6.44772 3 7V21C3 21.5523 3.44772 22 4 22H20C20.5523 22 21 21.5523 21 21V7C21 6.44772 20.5523 6 20 6H17C17 3.23858 14.7614 1 12 1C9.23858 1 7 3.23858 7 6ZM9 10C9 11.6569 10.3431 13 12 13C13.6569 13 15 11.6569 15 10H17C17 12.7614 14.7614 15 12 15C9.23858 15 7 12.7614 7 10H9Z">
+                </path>
+            </svg>
+            <p>CART</p>
+        </div>
+        <div class="srchlgo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path
+                    d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748Z">
+                </path>
+            </svg>
+        </div>
+    </div>
+
+    <div class="photos"></div>
+    <div class="menuopt">
+        <div class="menu">
+            <div class="ourmenu">
+                <H3>OUR MENU</H3>
+            </div>
+            <div class="seeall">
+                <P>See All</P>
+            </div>
+        </div>
+        <div class="menucard">
+            <div class="arr">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path
+                        d="M10.8284 12.0007L15.7782 16.9504L14.364 18.3646L8 12.0007L14.364 5.63672L15.7782 7.05093L10.8284 12.0007Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="card 1">
+                <div class="cardimg"><img
+                        src="https://d1rgpf387mknul.cloudfront.net/category/Home/web/1x_web_20230418043518853215_114x101png"
+                        alt=""></div>
+                <div class="cardtxt">Take off Combos</div>
+            </div>
+            <div class="card 2">
+                <div class="cardimg"><img src="https://www.burgerking.in/static/media/burger.a82c1d81.png" alt=""></div>
+                <div class="cardtxt">Value Meals (Save upto 47%)</div>
+            </div>
+
+            <div class="card 3">
+                <div class="cardimg"><img
+                        src="https://d1rgpf387mknul.cloudfront.net/category/Home/web/1x_web_20260421175936091665_114x101png"
+                        alt=""></div>
+                <div class="cardtxt">Korean Spicy Fest s2</div>
+            </div>
+
+            <div class="card 4">
+                <div class="cardimg"><img
+                        src="https://d1rgpf387mknul.cloudfront.net/category/Home/web/1x_web_20260414061639969544_114x101png"
+                        alt=""></div>
+                <div class="cardtxt">INDULGENT MEAL FOR 1</div>
+            </div>
+
+            <div class="card 5">
+                <div class="cardimg"><img
+                        src="https://d1rgpf387mknul.cloudfront.net/category/Home/web/1x_web_20260506052820271786_114x101png"
+                        alt=""></div>
+                <div class="cardtxt">INDULGENT MEAL FOR 2</div>
+            </div>
+
+            <div class="card 6">
+                <div class="cardimg"><img
+                        src="https://d1rgpf387mknul.cloudfront.net/category/Home/web/1x_web_20250705152337575176_114x101png"
+                        alt=""></div>
+                <div class="cardtxt">Whopper Deluxe</div>
+            </div>
+
+            <div class="card 7">
+                <div class="cardimg"><img
+                        src="https://d1rgpf387mknul.cloudfront.net/category/Home/ml/1x_ml_20251124103826121543_93x83png"
+                        alt=""></div>
+                <div class="cardtxt">Value Meals</div>
+            </div>
+
+            <div class="card 8">
+                <div class="cardimg"><img
+                        src="https://d1rgpf387mknul.cloudfront.net/category/Home/ml/1x_ml_20240521084148573736_93x83png"
+                        alt=""></div>
+                <div class="cardtxt">Original Whopper</div>
+            </div>
+            <div class="arr">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                    <path
+                        d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="expsect">
+
+        <div class="explore">EXPLORE FULL MENU</div>
+        <div class="exploreimg"></div>
+        <div class="disc">
+            <p>
+                <center><span><b>Disclaimer: </b>All Images used are illustrative and striclty for representational
+                        purpose only</span></center>
+            </p>
+        </div>
+
+    </div>
+    <div class="fot">
+        <div class="about">
+            <div class="info">
+                <div class="headings">
+                    <h2>BK INFO</h2>
+                </div>
+                <div class="subhead">
+                    <h4>About BK</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Fresh Taste</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Investor Relations</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Fssai</h4>
+                </div>
+            </div>
+            <div class="info">
+                <div class="headings">
+                    <h2>CONTACT</h2>
+                </div>
+                <div class="subhead">
+                    <h4>FAQ's & Support</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Write to us:</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Careers</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Coustomer Care</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Supply Chain Quries</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Investor Relation</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Franchising</h4>
+                </div>
+            </div>
+            <div class="info">
+                <div class="headings">
+                    <h2>BK CARES</h2>
+                </div>
+                <div class="subhead">
+                    <h4>Nutrition Information</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Creating Brighter Futures</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Trust & Taste</h4>
+                </div>
+                <div class="subhead">
+                    <h4>COVID-19 Safety</h4>
+                </div>
+            </div>
+            <div class="info">
+                <div class="headings">
+                    <h2>LEGAL</h2>
+                </div>
+                <div class="subhead">
+                    <h4>Terms & Conditions</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Privacy Policy</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Promotional T & C</h4>
+                </div>
+                <div class="subhead">
+                    <h4>Compliance</h4>
+                </div>
+            </div>
+            <div class="info">
+                <div class="headings1">
+                    <h2>DOWNLOAD OUR APP</h2>
+                </div>
+                <div class="app">
+                    <div class="apple"></div>
+                    <div class="play"></div>
+                </div>
+            </div>
+        </div>
+        <div class="line"><hr class="line"></div>
+        <div class="contact">
+            <div class="logo2"></div>
+            <div class="copy"><h3>TM & 2026 BURGER KING COMPANY LLC. All Rights Reserved.</h3></div>
+            <div class="social">
+                <div class="icon1 icons"></div>
+                <div class="icon2 icons"></div>
+                <div class="icon3 icons"></div>
+                <div class="icon4 icons"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
